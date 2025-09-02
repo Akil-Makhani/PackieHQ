@@ -5,7 +5,7 @@ const CustomizedIntegrations = () => {
     <div className='px-6 md:px-14 lg:px-24  grid grid-cols-1 lg:grid-cols-2 gap-20 items-center'>
       <div className='flex items-left justify-left md:w-full w-full md:mb-0'>
         <img
-          src='/packieCheckout2.png'
+          src='/canva.png'
           alt='Customized Integrations'
           className='w-full h-full'
         />
