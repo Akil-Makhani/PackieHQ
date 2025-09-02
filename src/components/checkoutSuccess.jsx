@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 
 const sliderImages = ["/successSlide1.webp", "/successSlide2.webp"];
 
@@ -72,10 +73,12 @@ const CheckoutSuccess = () => {
             into completed sales with accurate delivery dates, same day shipping
             and expedited options that satisfy customer expectations.
           </p>
-          <button className='mt-8 group relative px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300'>
-            <span className='relative z-10'>Start free trial</span>
-            <div className='absolute inset-0 bg-gradient-to-r from-orange-600 to-orange-700 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300'></div>
-          </button>
+          <Link to='/signup'>
+            <button className='mt-8 group relative px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300'>
+              <span className='relative z-10'>Start free trial</span>
+              <div className='absolute inset-0 bg-gradient-to-r from-orange-600 to-orange-700 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300'></div>
+            </button>
+          </Link>
         </div>
 
         {/* Right slider */}

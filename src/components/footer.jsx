@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const SocialIcon = ({ label, href, children }) => (
   <a
@@ -20,10 +21,12 @@ const Footer = () => {
           <br className='hidden md:block' /> into solutions? We can do it.
         </h2>
         <div className='mt-8 flex items-center justify-center gap-4'>
-          <button className=' group relative px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300'>
-            <span className='relative z-10'>Start free trial</span>
-            <div className='absolute inset-0 bg-gradient-to-r from-orange-600 to-orange-700 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300'></div>
-          </button>
+          <Link to='/signup'>
+            <button className=' group relative px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300'>
+              <span className='relative z-10'>Start free trial</span>
+              <div className='absolute inset-0 bg-gradient-to-r from-orange-600 to-orange-700 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300'></div>
+            </button>
+          </Link>
           <button className='px-8 py-4 border-2 border-slate-300 text-white font-semibold rounded-2xl hover:bg-slate-50 hover:border-slate-400 hover:text-black transform hover:-translate-y-1 transition-all duration-300'>
             Book a demo
           </button>

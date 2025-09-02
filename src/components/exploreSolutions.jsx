@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const cardBase =
   "relative bg-white rounded-2xl ring-1 ring-slate-200 shadow-sm transition-transform duration-300 ease-out transform-gpu hover:shadow-xl hover:scale-[1.03] hover:z-10";
 
@@ -12,7 +14,6 @@ const platforms = [
   { label: "Zoey", src: "/zoeyLogo.svg" },
   { label: "TreadMe", src: "/trade-me.png" },
   { label: "Xero", src: "/xero.png" },
-
 ];
 
 const ExploreSolutions = () => {
@@ -30,10 +31,12 @@ const ExploreSolutions = () => {
               <br />
               platform
             </h2>
-            <button className='mt-8 group relative px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300'>
-              <span className='relative z-10'>Start free trial</span>
-              <div className='absolute inset-0 bg-gradient-to-r from-orange-600 to-orange-700 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300'></div>
-            </button>
+            <Link to='/signup'>
+              <button className='mt-8 group relative px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300'>
+                <span className='relative z-10'>Start free trial</span>
+                <div className='absolute inset-0 bg-gradient-to-r from-orange-600 to-orange-700 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300'></div>
+              </button>
+            </Link>
           </div>
 
           {/* Right Grid */}

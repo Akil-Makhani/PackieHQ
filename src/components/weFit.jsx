@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const WeFit = () => {
   return (
@@ -10,7 +11,6 @@ const WeFit = () => {
         <h1
           className='text-sky-400 font-extrabold text-4xl md:text-6xl mb-4 tracking-tight font-robotoSlab'
           style={{ lineHeight: 1.1 }}
-          
         >
           HERE'S HOW WE FIT IN
         </h1>
@@ -23,10 +23,12 @@ const WeFit = () => {
       </div>
       <div className='w-full flex flex-col items-center justify-center'>
         <img src='/weFit_new.png' alt='How We Fit In' className='w-full' />
-        <button className='mt-8 group relative px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300'>
-          <span className='relative z-10'>Start free trial</span>
-          <div className='absolute inset-0 bg-gradient-to-r from-orange-600 to-orange-700 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300'></div>
-        </button>
+        <Link to='/signup'>
+          <button className='mt-8 group relative px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300'>
+            <span className='relative z-10'>Start free trial</span>
+            <div className='absolute inset-0 bg-gradient-to-r from-orange-600 to-orange-700 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300'></div>
+          </button>
+        </Link>
       </div>
     </section>
   );
